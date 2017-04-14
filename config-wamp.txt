@@ -1,0 +1,3 @@
+pour faire fonctionner le framework et si on a une erreur 500 
+on vezrifie si on bien le module rewrite_mod qui existe bien 
+sous windows
