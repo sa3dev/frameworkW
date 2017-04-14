@@ -9,7 +9,7 @@ class ArticleModel extends \W\Model\Model
   //
     public function findAllJoinAuthor($orderBy = '', $orderDir = 'ASC', $limit = null, $offset = null)
     {
-      $sql = 'SELECT * FROM ' . $this->table;
+      $sql = 'SELECT *, users.id as id_user , article.id as id_article FROM ' . $this->table;
       if (!empty($orderBy)){
 
         //sécurisation des paramètres, pour éviter les injections SQL

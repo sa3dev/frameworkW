@@ -5,6 +5,8 @@
 	<title><?= $this->e($title) ?></title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?= $this->assetUrl('css/style.css') ?>">
+	<link rel="stylesheet" href="<?php $this->assetUrl('js/bootstrap-tagsinput.css') ?>"></link>
+	<link rel="stylesheet" href="<?php echo $this->assetUrl('css/style.css') ?>">
 </head>
 <body>
 	<nav class="navbar navbar-default">
@@ -72,6 +74,10 @@
 		<footer >
 		</footer>
 	</div>
-	<script type="text/javascript"></script>
+
+	<script src="<?= $this->assetUrl('js/jquery-3.1.1.min.js') ?>"></script>
+	<script src="<?= $this->assetUrl('js/bootstrap.js') ?>"></script>
+	<script src="<?= $this->assetUrl('js/bootstrap-tagsinput.js') ?>"></script>
+	<script src="<?= $this->assetUrl('js/app.js') ?>"></script>
 </body>
 </html>

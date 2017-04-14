@@ -16,10 +16,10 @@
       <textarea type="text" class="form-control" name="content" value=""></textarea>
     </div>
 
-    <div class="form-group">
-      <label for="category">Category :</label>
-      <input type="text" class="form-control" name="category" value="">
-    </div>
+  <div class="form-group">
+    <label for="category">Category :</label>
+    <input type="text" class="form-control" name="category" value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput">
+  </div>
 
     <input type="submit" class="btn btn-submit" value="Publier l'article">
 
