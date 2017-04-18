@@ -20,6 +20,11 @@
       <textarea type="text" class="form-control" name="content" value=""><?= $article['content']; ?></textarea>
     </div>
 
+    <div class="form-group">
+      <label  for="category">Category :</label>
+      <input type="text" class="form-control tagsinput" name="category" value="<?= $article['categories']; ?>" >
+    </div>
+
     <input type="submit" class="btn btn-submit" value="Publier l'article">
 
   </form>

@@ -51,16 +51,20 @@
 
 <?php $this->start('sidebar') ?>
 
-		<div class="thumbnail">
-			<h1>TEST</h1>
-			<img src="" alt="">
-			<p>test</p>
-		</div>
+		<div class="">
+			<h1>Categories</h1>
+			<ul class="list-group">
+				<?php foreach ($categories as $category) { ?>
+			  	<li class="list-group-item"><span class="badge"><?php echo $category['articles']; ?></span> <a href="#"><?= $category['name']; ?></a></li>
+				<?php } ?>
+			</ul>
 
-		<div class="thumbnail">
-			<h1>TEST2</h1>
-			<img src="" alt="">
-			<p>test</p>
+			<h1>Derniers article</h1>
+			<ul class="list-group">
+				<?php foreach ($last_article as $value) { ?>
+					<li class="list-group-item"><a href="<?= $this->url('article_view' , ['id' => $value['id'] ])?>"><?php echo $value['title']; ?></a></li>
+				<?php } ?>
+			</ul>
 		</div>
 
 <?php $this->stop('sidebar') ?>

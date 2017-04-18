@@ -2,7 +2,6 @@
 
 <?php $this->start('main_content') ?>
 
-    <h2><?php echo $article['title'] ?></h2>
 		<article >
 			<p><?php echo $article['content'] ?></p>
 		</article>

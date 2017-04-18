@@ -43,4 +43,21 @@ class ArticleModel extends \W\Model\Model
 
       return $sth->fetchAll();
     }
+
+    public function findWithCategory( $id )
+    {
+        if (!is_numeric($id)){
+          return false;
+        }
+
+        $sql = 'SELECT *, GROUP_CONCAT(category.name) as categories FROM ' . $this->table . '
+         LEFT JOIN article_category ON article_category.id_article = article.id
+         INNER JOIN category ON category.id = article_category.id_category
+         WHERE article. ' . $this->primaryKey . ' = :id LIMIT 1' ;
+        $sth = $this->dbh->prepare($sql);
+        $sth->bindValue(':id', $id);
+        $sth->execute();
+
+        return $sth->fetch();
+    }
 }

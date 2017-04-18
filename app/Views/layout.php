@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<title><?= $this->e($title) ?></title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="<?= $this->assetUrl('css/style.css') ?>">
-	<link rel="stylesheet" href="<?php $this->assetUrl('js/bootstrap-tagsinput.css') ?>"></link>
+
+	<link rel="stylesheet" href="<?php echo $this->assetUrl('css/bootstrap-tagsinput.css') ?>"></link>
 	<link rel="stylesheet" href="<?php echo $this->assetUrl('css/style.css') ?>">
 </head>
 <body>
@@ -78,6 +78,7 @@
 	<script src="<?= $this->assetUrl('js/jquery-3.1.1.min.js') ?>"></script>
 	<script src="<?= $this->assetUrl('js/bootstrap.js') ?>"></script>
 	<script src="<?= $this->assetUrl('js/bootstrap-tagsinput.js') ?>"></script>
+	<script src="<?= $this->assetUrl('js/typeahead.bundle.min.js') ?>"></script>
 	<script src="<?= $this->assetUrl('js/app.js') ?>"></script>
 </body>
 </html>

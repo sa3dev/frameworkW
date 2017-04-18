@@ -18,7 +18,8 @@
 		['GET|POST' , '/login'                 , 'Security#login'  , 'security_login'],
 		['GET|POST' , '/register'              , 'Security#register', 'security_register'],
 		['GET|POST' , '/logout'              , 'Security#logout', 'security_logout'],
-
 		['GET|POST' , '/user/create'           , 'user#create'     ,'user_create'    ],	//cree utilisateur
+
+		['GET'     ,'/article/categories.json'  , 'Article#categories' , 'article_categories'] //
 
 	);
